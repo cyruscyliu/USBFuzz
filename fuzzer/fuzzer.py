@@ -51,7 +51,6 @@ class USBFuzz(object):
             print("fuzzer not setup")
             return
         env = os.environ.copy()
-        env["AFL_NO_UI"] = "1"
         env["AFL_NO_ARITH"] = "1"
         env["AFL_FAST_CAL"] = "1"
         env["AFL_SKIP_CPUFREQ"] = "1"
